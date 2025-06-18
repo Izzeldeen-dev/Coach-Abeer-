@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المدربة عبير - مدربة حياة وعلاقات معتمدة دولياً</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'cairo': ['Cairo', 'sans-serif'],
+                    },
+                    colors: {
+                        'pink': {
+                            400: '#f472b6',
+                            500: '#ec4899',
+                            600: '#db2777',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #fce7f3 0%, #f3e8ff 100%);
+        }
+        .coach-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-cairo">
+    <!-- Header -->
+    <header class="bg-white shadow-sm fixed w-full top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2 space-x-reverse">
+                    <div class="bg-pink-500 p-2 rounded-lg">
+                        <i class="fas fa-heart text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-gray-800">المدربة</h1>
+                        <h2 class="text-lg font-semibold text-pink-500">عبير</h2>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8 space-x-reverse">
+                    <a href="#home" class="text-gray-700 hover:text-pink-500 font-medium">الرئيسية</a>
+                    <a href="#about" class="text-gray-700 hover:text-pink-500 font-medium">نبذة عني</a>
+                    <a href="#services" class="text-gray-700 hover:text-pink-500 font-medium">الخدمات</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-pink-500 font-medium">آراء العملاء</a>
+                    <a href="#contact" class="text-gray-700 hover:text-pink-500 font-medium">تواصل معي</a>
+                </div>
+
+                <div class="flex items-center space-x-4 space-x-reverse">
+                    <button id="langToggle" onclick="switchLanguage()" class="bg-gray-100 hover:bg-gray-200 text-gray-700 px-4 py-2 rounded-full font-medium transition-colors mr-2">
+                        EN
+                    </button>
+                    <button class="bg-pink-500 hover:bg-pink-600 text-white px-6 py-2 rounded-full font-medium transition-colors">
+                        <i class="fas fa-calendar-alt ml-2"></i>
+                        احجز جلسة
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg min-h-screen flex items-center pt-20">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="text-center md:text-right order-2 md:order-1">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
+                        مرحباً! أنا عبير، مدربة حياة وعلاقات معتمدة دولياً
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        أساعدك في التحرر من التوتر والقلق وبناء حياة أكثر سعادة وتوازناً من خلال جلسات فردية مخصصة تهدف إلى تطوير استراتيجيات فعالة للتعامل مع ضغوط الحياة اليومية.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                        <button class="bg-pink-500 hover:bg-pink-600 text-white px-8 py-3 rounded-full font-medium transition-colors">
+                            <i class="fas fa-play ml-2"></i>
+                            ابدأ رحلة التعافي
+                        </button>
+                        <button class="border-2 border-pink-500 text-pink-500 hover:bg-pink-500 hover:text-white px-8 py-3 rounded-full font-medium transition-colors">
+                            <i class="fas fa-user ml-2"></i>
+                            تعرف أكثر
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="flex justify-center order-1 md:order-2">
+                    <div class="relative w-80 h-80 mx-auto">
+                        <div class="w-full h-full bg-gradient-to-br from-pink-200 to-purple-200 rounded-full flex items-center justify-center shadow-xl overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=388&q=80"
+                                 alt="Professional Life Coach"
+                                 class="w-full h-full object-cover rounded-full">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div>
+                    <div class="text-4xl font-bold text-pink-500 mb-2">100+</div>
+                    <div class="text-gray-600 font-medium">حالة شفاء</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-pink-500 mb-2">95%</div>
+                    <div class="text-gray-600 font-medium">رضا العملاء</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-pink-500 mb-2">3+</div>
+                    <div class="text-gray-600 font-medium">سنوات خبرة</div>
+                </div>
+                <div>
+                    <div class="text-4xl font-bold text-pink-500 mb-2">24/7</div>
+                    <div class="text-gray-600 font-medium">دعم</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <div class="inline-flex items-center justify-center w-16 h-16 bg-pink-100 rounded-full mb-6">
+                    <i class="fas fa-heart text-pink-500 text-2xl"></i>
+                </div>
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">نبذة عني</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                    مدربة حياة وعلاقات معتمدة دولياً، أؤمن بقدرة كل شخص على تحقيق التوازن والسعادة في حياته من خلال التحرر من التوتر والقلق وبناء حياة أكثر سعادة وتوازناً
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <!-- Content Side -->
+                <div class="order-2 lg:order-1">
+                    <div class="bg-gradient-to-br from-pink-50 to-purple-50 p-8 rounded-3xl shadow-lg">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6 flex items-center">
+                            <div class="w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center ml-3">
+                                <i class="fas fa-star text-white text-sm"></i>
+                            </div>
+                            رحلتي في التدريب
+                        </h3>
+                        
+                        <div class="space-y-6 text-gray-600 leading-relaxed">
+                            <p class="text-base">
+                                أعمل مع الأفراد لمساعدتهم في التغلب على التحديات النفسية والعاطفية، وبناء علاقات صحية ومتوازنة. خلال مسيرتي المهنية، ساعدت المئات من الأشخاص في التحرر من القلق والتوتر.
+                            </p>
+                            <p class="text-base">
+                                أستخدم أحدث التقنيات والأساليب المعتمدة دولياً في التدريب والعلاج النفسي. هدفي هو مساعدتك في اكتشاف إمكاناتك الحقيقية وبناء حياة مليئة بالسعادة والإنجاز.
+                            </p>
+                        </div>
+                        
+                        <div class="mt-8 grid grid-cols-1 gap-4">
+                            <div class="flex items-center p-4 bg-white rounded-xl shadow-sm">
+                                <div class="bg-pink-100 p-3 rounded-full ml-4">
+                                    <i class="fas fa-certificate text-pink-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">مدربة معتمدة دولياً</h4>
+                                    <p class="text-sm text-gray-600">شهادات معتمدة في التدريب والعلاج النفسي</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center p-4 bg-white rounded-xl shadow-sm">
+                                <div class="bg-purple-100 p-3 rounded-full ml-4">
+                                    <i class="fas fa-brain text-purple-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">خبرة في العلاج النفسي</h4>
+                                    <p class="text-sm text-gray-600">سنوات من الخبرة في مساعدة الأشخاص</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center p-4 bg-white rounded-xl shadow-sm">
+                                <div class="bg-pink-100 p-3 rounded-full ml-4">
+                                    <i class="fas fa-shield-alt text-pink-500"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-800">متخصصة في إدارة التوتر والقلق</h4>
+                                    <p class="text-sm text-gray-600">تقنيات متقدمة للتعامل مع ضغوط الحياة</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Image Side -->
+                <div class="order-1 lg:order-2 flex justify-center">
+                    <div class="relative">
+                        <!-- Decorative Elements -->
+                        <div class="absolute -top-4 -right-4 w-24 h-24 bg-pink-200 rounded-full opacity-60"></div>
+                        <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-purple-200 rounded-full opacity-40"></div>
+                        
+                        <!-- Main Image Container -->
+                        <div class="relative bg-gradient-to-br from-pink-100 to-purple-100 p-6 rounded-3xl shadow-2xl">
+                            <img class="w-80 h-96 object-cover rounded-2xl shadow-lg"
+                                 src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+                                 alt="Life Coaching Session">
+                            
+                            <!-- Floating Stats -->
+                            <div class="absolute -bottom-4 -right-4 bg-white p-4 rounded-2xl shadow-lg">
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-pink-500">100+</div>
+                                    <div class="text-xs text-gray-600">حالة شفاء</div>
+                                </div>
+                            </div>
+                            
+                            <div class="absolute -top-4 -left-4 bg-white p-4 rounded-2xl shadow-lg">
+                                <div class="text-center">
+                                    <div class="text-2xl font-bold text-purple-500">95%</div>
+                                    <div class="text-xs text-gray-600">رضا العملاء</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="bg-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">خدماتي</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    أقدم جلسات تدريبية مخصصة تهدف إلى مساعدتك في التغلب على التحديات وتحقيق أهدافك
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-pink-50 to-purple-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-pink-500 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-brain text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">جلسات فردية للتحرر من التوتر والقلق</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        جلسات تدريبية مخصصة تهدف إلى مساعدتك في التغلب على التوتر والقلق، وتطوير استراتيجيات فعالة للتعامل مع ضغوط الحياة اليومية.
+                    </p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-purple-500 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-heart text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">تدريب العلاقات</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        تطوير مهارات التواصل وبناء علاقات صحية ومتوازنة مع الآخرين، سواء في الحياة الشخصية أو المهنية.
+                    </p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-pink-50 to-purple-50 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="bg-pink-500 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-star text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">تطوير الذات</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        اكتشاف إمكاناتك الحقيقية وتحقيق أهدافك الشخصية والمهنية من خلال برامج تدريبية متخصصة.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="hero-bg py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">آراء العملاء</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    ما يقوله عملائي عن تجربتهم معي
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        "المدربة عبير ساعدتني كثيراً في التغلب على القلق والتوتر. الجلسات كانت مفيدة جداً وأشعر بتحسن كبير في حياتي."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center ml-4">
+                            <i class="fas fa-user text-pink-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">سارة أحمد</h4>
+                            <p class="text-gray-500 text-sm">عميلة</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        "تجربة رائعة مع المدربة عبير. أسلوبها في التدريب مميز وفعال. أنصح الجميع بالتجربة."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center ml-4">
+                            <i class="fas fa-user text-pink-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">محمد علي</h4>
+                            <p class="text-gray-500 text-sm">عميل</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        "الجلسات مع المدربة عبير غيرت حياتي للأفضل. أشعر بثقة أكبر وقدرة على مواجهة التحديات."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center ml-4">
+                            <i class="fas fa-user text-pink-500"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-800">فاطمة محمد</h4>
+                            <p class="text-gray-500 text-sm">عميلة</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-white py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-800 mb-4">تواصل معي</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                    هل أنت مستعد لبدء رحلة التغيير؟ تواصل معي الآن لحجز جلستك الأولى
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="bg-gradient-to-br from-pink-500 to-purple-600 p-8 rounded-2xl text-white">
+                    <h3 class="text-2xl font-bold mb-8">معلومات التواصل</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center space-x-4 space-x-reverse">
+                            <div class="bg-white bg-opacity-20 p-3 rounded-full">
+                                <i class="fas fa-phone text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">الهاتف</h4>
+                                <p class="opacity-90">+962 XX XXX XXXX</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4 space-x-reverse">
+                            <div class="bg-white bg-opacity-20 p-3 rounded-full">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">البريد الإلكتروني</h4>
+                                <p class="opacity-90">abeer.coach@example.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4 space-x-reverse">
+                            <div class="bg-white bg-opacity-20 p-3 rounded-full">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">الموقع</h4>
+                                <p class="opacity-90">عمان، الأردن</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center space-x-4 space-x-reverse">
+                            <div class="bg-white bg-opacity-20 p-3 rounded-full">
+                                <i class="fas fa-clock text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold">ساعات العمل</h4>
+                                <p class="opacity-90">الأحد - الخميس: 9:00 ص - 6:00 م</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-8 rounded-2xl">
+                    <form id="contactForm" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-2">الاسم الكامل</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-2">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">رقم الهاتف</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent">
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-2">الرسالة</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="اكتب رسالتك هنا..." class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-pink-500 focus:border-transparent"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-pink-500 hover:bg-pink-600 text-white py-3 px-6 rounded-lg font-medium transition-colors">
+                            <i class="fas fa-paper-plane ml-2"></i>
+                            إرسال الرسالة
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 space-x-reverse mb-4">
+                        <div class="bg-pink-500 p-2 rounded-lg">
+                            <i class="fas fa-heart text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">المدربة عبير</h3>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        مدربة حياة وعلاقات معتمدة دولياً، أساعدك في التحرر من التوتر والقلق وبناء حياة أكثر سعادة وتوازناً.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">روابط سريعة</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-pink-400 transition-colors">الرئيسية</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-pink-400 transition-colors">نبذة عني</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-pink-400 transition-colors">الخدمات</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-pink-400 transition-colors">تواصل معي</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">تابعني</h4>
+                    <div class="flex space-x-4 space-x-reverse">
+                        <a href="#" class="bg-gray-700 hover:bg-pink-500 p-3 rounded-full transition-colors">
+                            <i class="fab fa-facebook text-xl"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-pink-500 p-3 rounded-full transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-pink-500 p-3 rounded-full transition-colors">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                        <a href="#" class="bg-gray-700 hover:bg-pink-500 p-3 rounded-full transition-colors">
+                            <i class="fab fa-whatsapp text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p class="text-gray-400">&copy; 2025 المدربة عبير. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Language switching functionality
+        let currentLanguage = 'ar';
+        
+        const translations = {
+            ar: {
+                // Navigation
+                home: 'الرئيسية',
+                about: 'نبذة عني',
+                services: 'الخدمات',
+                testimonials: 'آراء العملاء',
+                contact: 'تواصل معي',
+                bookSession: 'احجز جلسة',
+                
+                // Hero section
+                heroTitle: 'مرحباً! أنا عبير، مدربة حياة وعلاقات معتمدة دولياً',
+                heroDescription: 'أساعدك في التحرر من التوتر والقلق وبناء حياة أكثر سعادة وتوازناً من خلال جلسات فردية مخصصة تهدف إلى تطوير استراتيجيات فعالة للتعامل مع ضغوط الحياة اليومية.',
+                startJourney: 'ابدأ رحلة التعافي',
+                learnMore: 'تعرف أكثر',
+                
+                // Statistics
+                healingCases: 'حالة شفاء',
+                clientSatisfaction: 'رضا العملاء',
+                yearsExperience: 'سنوات خبرة',
+                support: 'دعم',
+                
+                // About section
+                aboutTitle: 'نبذة عني',
+                aboutSubtitle: 'مدربة حياة وعلاقات معتمدة دولياً، أؤمن بقدرة كل شخص على تحقيق التوازن والسعادة في حياته من خلال التحرر من التوتر والقلق وبناء حياة أكثر سعادة وتوازناً',
+                journeyTitle: 'رحلتي في التدريب',
+                aboutText1: 'أعمل مع الأفراد لمساعدتهم في التغلب على التحديات النفسية والعاطفية، وبناء علاقات صحية ومتوازنة. خلال مسيرتي المهنية، ساعدت المئات من الأشخاص في التحرر من القلق والتوتر.',
+                aboutText2: 'أستخدم أحدث التقنيات والأساليب المعتمدة دولياً في التدريب والعلاج النفسي. هدفي هو مساعدتك في اكتشاف إمكاناتك الحقيقية وبناء حياة مليئة بالسعادة والإنجاز.',
+                credential1Title: 'مدربة معتمدة دولياً',
+                credential1Desc: 'شهادات معتمدة في التدريب والعلاج النفسي',
+                credential2Title: 'خبرة في العلاج النفسي',
+                credential2Desc: 'سنوات من الخبرة في مساعدة الأشخاص',
+                credential3Title: 'متخصصة في إدارة التوتر والقلق',
+                credential3Desc: 'تقنيات متقدمة للتعامل مع ضغوط الحياة',
+                
+                // Services
+                servicesTitle: 'خدماتي',
+                servicesSubtitle: 'أقدم جلسات تدريبية مخصصة تهدف إلى مساعدتك في التغلب على التحديات وتحقيق أهدافك',
+                service1Title: 'جلسات فردية للتحرر من التوتر والقلق',
+                service1Desc: 'جلسات تدريبية مخصصة تهدف إلى مساعدتك في التغلب على التوتر والقلق، وتطوير استراتيجيات فعالة للتعامل مع ضغوط الحياة اليومية.',
+                service2Title: 'تدريب العلاقات',
+                service2Desc: 'تطوير مهارات التواصل وبناء علاقات صحية ومتوازنة مع الآخرين، سواء في الحياة الشخصية أو المهنية.',
+                service3Title: 'تطوير الذات',
+                service3Desc: 'اكتشاف إمكاناتك الحقيقية وتحقيق أهدافك الشخصية والمهنية من خلال برامج تدريبية متخصصة.',
+                
+                // Testimonials
+                testimonialsTitle: 'آراء العملاء',
+                testimonialsSubtitle: 'ما يقوله عملائي عن تجربتهم معي',
+                
+                // Contact
+                contactTitle: 'تواصل معي',
+                contactSubtitle: 'هل أنت مستعد لبدء رحلة التغيير؟ تواصل معي الآن لحجز جلستك الأولى',
+                contactInfo: 'معلومات التواصل',
+                phone: 'الهاتف',
+                email: 'البريد الإلكتروني',
+                location: 'الموقع',
+                workingHours: 'ساعات العمل',
+                workingHoursText: 'الأحد - الخميس: 9:00 ص - 6:00 م',
+                fullName: 'الاسم الكامل',
+                phoneNumber: 'رقم الهاتف',
+                message: 'الرسالة',
+                messagePlaceholder: 'اكتب رسالتك هنا...',
+                sendMessage: 'إرسال الرسالة',
+                
+                // Footer
+                footerDescription: 'مدربة حياة وعلاقات معتمدة دولياً، أساعدك في التحرر من التوتر والقلق وبناء حياة أكثر سعادة وتوازناً.',
+                quickLinks: 'روابط سريعة',
+                followMe: 'تابعني',
+                copyright: 'جميع الحقوق محفوظة',
+                
+                // Form validation
+                fillRequired: 'يرجى ملء جميع الحقول المطلوبة',
+                messageSent: 'تم إرسال رسالتك بنجاح! سأتواصل معك قريباً.'
+            },
+            en: {
+                // Navigation
+                home: 'Home',
+                about: 'About Me',
+                services: 'Services',
+                testimonials: 'Testimonials',
+                contact: 'Contact',
+                bookSession: 'Book Session',
+                
+                // Hero section
+                heroTitle: 'Hello! I\'m Abeer, an internationally certified life and relationship coach',
+                heroDescription: 'I help you break free from stress and anxiety and build a happier, more balanced life through personalized individual sessions aimed at developing effective strategies for dealing with daily life pressures.',
+                startJourney: 'Start Recovery Journey',
+                learnMore: 'Learn More',
+                
+                // Statistics
+                healingCases: 'Healing Cases',
+                clientSatisfaction: 'Client Satisfaction',
+                yearsExperience: 'Years Experience',
+                support: 'Support',
+                
+                // About section
+                aboutTitle: 'About Me',
+                aboutSubtitle: 'An internationally certified life and relationship coach, I believe in every person\'s ability to achieve balance and happiness in their life through breaking free from stress and anxiety and building a happier, more balanced life',
+                journeyTitle: 'My Training Journey',
+                aboutText1: 'I work with individuals to help them overcome psychological and emotional challenges, and build healthy and balanced relationships. Throughout my professional career, I have helped hundreds of people break free from anxiety and stress.',
+                aboutText2: 'I use the latest internationally recognized techniques and methods in training and psychotherapy. My goal is to help you discover your true potential and build a life full of happiness and achievement.',
+                credential1Title: 'Internationally Certified Coach',
+                credential1Desc: 'Certified credentials in training and psychotherapy',
+                credential2Title: 'Experience in Psychotherapy',
+                credential2Desc: 'Years of experience helping people',
+                credential3Title: 'Specialized in Stress and Anxiety Management',
+                credential3Desc: 'Advanced techniques for dealing with life pressures',
+                
+                // Services
+                servicesTitle: 'My Services',
+                servicesSubtitle: 'I provide specialized training sessions aimed at helping you overcome challenges and achieve your goals',
+                service1Title: 'Individual Sessions for Stress and Anxiety Relief',
+                service1Desc: 'Specialized training sessions aimed at helping you overcome stress and anxiety, and develop effective strategies for dealing with daily life pressures.',
+                service2Title: 'Relationship Training',
+                service2Desc: 'Developing communication skills and building healthy and balanced relationships with others, whether in personal or professional life.',
+                service3Title: 'Self Development',
+                service3Desc: 'Discover your true potential and achieve your personal and professional goals through specialized training programs.',
+                
+                // Testimonials
+                testimonialsTitle: 'Client Testimonials',
+                testimonialsSubtitle: 'What my clients say about their experience with me',
+                
+                // Contact
+                contactTitle: 'Contact Me',
+                contactSubtitle: 'Are you ready to start your transformation journey? Contact me now to book your first session',
+                contactInfo: 'Contact Information',
+                phone: 'Phone',
+                email: 'Email',
+                location: 'Location',
+                workingHours: 'Working Hours',
+                workingHoursText: 'Sunday - Thursday: 9:00 AM - 6:00 PM',
+                fullName: 'Full Name',
+                phoneNumber: 'Phone Number',
+                message: 'Message',
+                messagePlaceholder: 'Write your message here...',
+                sendMessage: 'Send Message',
+                
+                // Footer
+                footerDescription: 'An internationally certified life and relationship coach, I help you break free from stress and anxiety and build a happier, more balanced life.',
+                quickLinks: 'Quick Links',
+                followMe: 'Follow Me',
+                copyright: 'All rights reserved',
+                
+                // Form validation
+                fillRequired: 'Please fill in all required fields',
+                messageSent: 'Your message has been sent successfully! I will contact you soon.'
+            }
+        };
+        
+        function switchLanguage() {
+            currentLanguage = currentLanguage === 'ar' ? 'en' : 'ar';
+            const html = document.documentElement;
+            const body = document.body;
+            
+            if (currentLanguage === 'en') {
+                html.setAttribute('lang', 'en');
+                html.setAttribute('dir', 'ltr');
+                body.style.fontFamily = "'Inter', sans-serif";
+            } else {
+                html.setAttribute('lang', 'ar');
+                html.setAttribute('dir', 'rtl');
+                body.style.fontFamily = "'Cairo', sans-serif";
+            }
+            
+            updateContent();
+        }
+        
+        function updateContent() {
+            const t = translations[currentLanguage];
+            
+            // Update navigation
+            document.querySelector('a[href="#home"]').textContent = t.home;
+            document.querySelector('a[href="#about"]').textContent = t.about;
+            document.querySelector('a[href="#services"]').textContent = t.services;
+            document.querySelector('a[href="#testimonials"]').textContent = t.testimonials;
+            document.querySelector('a[href="#contact"]').textContent = t.contact;
+            
+            // Update buttons
+            document.querySelectorAll('button').forEach(btn => {
+                if (btn.textContent.includes('احجز جلسة') || btn.textContent.includes('Book Session')) {
+                    btn.innerHTML = `<i class="fas fa-calendar-alt ml-2"></i> ${t.bookSession}`;
+                }
+                if (btn.textContent.includes('ابدأ رحلة') || btn.textContent.includes('Start Recovery')) {
+                    btn.innerHTML = `<i class="fas fa-play ml-2"></i> ${t.startJourney}`;
+                }
+                if (btn.textContent.includes('تعرف أكثر') || btn.textContent.includes('Learn More')) {
+                    btn.innerHTML = `<i class="fas fa-user ml-2"></i> ${t.learnMore}`;
+                }
+                if (btn.textContent.includes('إرسال الرسالة') || btn.textContent.includes('Send Message')) {
+                    btn.innerHTML = `<i class="fas fa-paper-plane ml-2"></i> ${t.sendMessage}`;
+                }
+            });
+            
+            // Update hero section
+            document.querySelector('.text-4xl.md\\:text-5xl').textContent = t.heroTitle;
+            document.querySelector('.text-lg.text-gray-600.mb-8').textContent = t.heroDescription;
+            
+            // Update statistics section
+            const statLabels = document.querySelectorAll('.text-gray-600.font-medium');
+            if (statLabels.length >= 4) {
+                statLabels[0].textContent = t.healingCases;
+                statLabels[1].textContent = t.clientSatisfaction;
+                statLabels[2].textContent = t.yearsExperience;
+                statLabels[3].textContent = t.support;
+            }
+            
+            // Update About section
+            const aboutSection = document.querySelector('#about');
+            if (aboutSection) {
+                aboutSection.querySelector('h2').textContent = t.aboutTitle;
+                aboutSection.querySelector('.text-lg.text-gray-600.max-w-3xl').textContent = t.aboutSubtitle;
+                aboutSection.querySelector('h3').innerHTML = `
+                    <div class="w-8 h-8 bg-pink-500 rounded-full flex items-center justify-center ml-3">
+                        <i class="fas fa-star text-white text-sm"></i>
+                    </div>
+                    ${t.journeyTitle}
+                `;
+                
+                const aboutTexts = aboutSection.querySelectorAll('.space-y-6 p');
+                if (aboutTexts.length >= 2) {
+                    aboutTexts[0].textContent = t.aboutText1;
+                    aboutTexts[1].textContent = t.aboutText2;
+                }
+                
+                const credentialTitles = aboutSection.querySelectorAll('.font-semibold.text-gray-800');
+                const credentialDescs = aboutSection.querySelectorAll('.text-sm.text-gray-600');
+                if (credentialTitles.length >= 3 && credentialDescs.length >= 3) {
+                    credentialTitles[0].textContent = t.credential1Title;
+                    credentialDescs[0].textContent = t.credential1Desc;
+                    credentialTitles[1].textContent = t.credential2Title;
+                    credentialDescs[1].textContent = t.credential2Desc;
+                    credentialTitles[2].textContent = t.credential3Title;
+                    credentialDescs[2].textContent = t.credential3Desc;
+                }
+                
+                // Update floating stats in about section
+                const floatingStats = aboutSection.querySelectorAll('.text-xs.text-gray-600');
+                if (floatingStats.length >= 2) {
+                    floatingStats[0].textContent = t.healingCases;
+                    floatingStats[1].textContent = t.clientSatisfaction;
+                }
+            }
+            
+            // Update Services section
+            const servicesSection = document.querySelector('#services');
+            if (servicesSection) {
+                servicesSection.querySelector('h2').textContent = t.servicesTitle;
+                servicesSection.querySelector('.text-lg.text-gray-600.max-w-2xl').textContent = t.servicesSubtitle;
+                
+                const serviceTitles = servicesSection.querySelectorAll('.text-xl.font-bold.text-gray-800.mb-4');
+                const serviceDescs = servicesSection.querySelectorAll('.text-gray-600.leading-relaxed');
+                if (serviceTitles.length >= 3 && serviceDescs.length >= 3) {
+                    serviceTitles[0].textContent = t.service1Title;
+                    serviceDescs[0].textContent = t.service1Desc;
+                    serviceTitles[1].textContent = t.service2Title;
+                    serviceDescs[1].textContent = t.service2Desc;
+                    serviceTitles[2].textContent = t.service3Title;
+                    serviceDescs[2].textContent = t.service3Desc;
+                }
+            }
+            
+            // Update Testimonials section
+            const testimonialsSection = document.querySelector('#testimonials');
+            if (testimonialsSection) {
+                testimonialsSection.querySelector('h2').textContent = t.testimonialsTitle;
+                testimonialsSection.querySelector('.text-lg.text-gray-600.max-w-2xl').textContent = t.testimonialsSubtitle;
+            }
+            
+            // Update Contact section
+            const contactSection = document.querySelector('#contact');
+            if (contactSection) {
+                contactSection.querySelector('h2').textContent = t.contactTitle;
+                contactSection.querySelector('.text-lg.text-gray-600.max-w-2xl').textContent = t.contactSubtitle;
+                contactSection.querySelector('.text-2xl.font-bold.mb-8').textContent = t.contactInfo;
+                
+                const contactLabels = contactSection.querySelectorAll('.font-semibold');
+                if (contactLabels.length >= 4) {
+                    contactLabels[0].textContent = t.phone;
+                    contactLabels[1].textContent = t.email;
+                    contactLabels[2].textContent = t.location;
+                    contactLabels[3].textContent = t.workingHours;
+                }
+                
+                const workingHoursText = contactSection.querySelector('.opacity-90');
+                if (workingHoursText && (workingHoursText.textContent.includes('الأحد') || workingHoursText.textContent.includes('Sunday'))) {
+                    workingHoursText.textContent = t.workingHoursText;
+                }
+                
+                // Update form labels
+                const formLabels = contactSection.querySelectorAll('label');
+                if (formLabels.length >= 4) {
+                    formLabels[0].textContent = t.fullName;
+                    formLabels[1].textContent = t.email;
+                    formLabels[2].textContent = t.phoneNumber;
+                    formLabels[3].textContent = t.message;
+                }
+                
+                const textarea = contactSection.querySelector('textarea');
+                if (textarea) {
+                    textarea.placeholder = t.messagePlaceholder;
+                }
+            }
+            
+            // Update Footer
+            const footer = document.querySelector('footer');
+            if (footer) {
+                footer.querySelector('.text-gray-400.leading-relaxed').textContent = t.footerDescription;
+                
+                const footerHeadings = footer.querySelectorAll('.text-lg.font-semibold.mb-4');
+                if (footerHeadings.length >= 2) {
+                    footerHeadings[0].textContent = t.quickLinks;
+                    footerHeadings[1].textContent = t.followMe;
+                }
+                
+                // Update footer navigation links
+                const footerLinks = footer.querySelectorAll('a[href^="#"]');
+                if (footerLinks.length >= 4) {
+                    footerLinks[0].textContent = t.home;
+                    footerLinks[1].textContent = t.about;
+                    footerLinks[2].textContent = t.services;
+                    footerLinks[3].textContent = t.contact;
+                }
+                
+                const copyrightText = footer.querySelector('.text-gray-400');
+                if (copyrightText && copyrightText.textContent.includes('©')) {
+                    copyrightText.innerHTML = `&copy; 2025 ${currentLanguage === 'ar' ? 'المدربة عبير' : 'Coach Abeer'}. ${t.copyright}.`;
+                }
+            }
+            
+            // Update language toggle button
+            document.getElementById('langToggle').textContent = currentLanguage === 'ar' ? 'EN' : 'عربي';
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Contact form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const phone = formData.get('phone');
+            const message = formData.get('message');
+            
+            // Simple validation
+            if (!name || !email || !message) {
+                alert(translations[currentLanguage].fillRequired);
+                return;
+            }
+            
+            // Here you would typically send the data to a server
+            // For now, we'll just show a success message
+            alert(translations[currentLanguage].messageSent);
+            this.reset();
+        });
+
+        // Add scroll effect to header
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('bg-white', 'shadow-lg');
+            } else {
+                header.classList.remove('shadow-lg');
+            }
+        });
+    </script>
+</body>
+</html>
